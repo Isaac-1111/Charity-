@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity</title>
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    
+</head>
+<body>
+    <div id="fh5co-wrapper">
+        <div id="fh5co-page">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 text-left fh5co-link">
+                            <a href="#">FAQ</a>
+                            <a href="#">Forum</a>
+                            <a href="contact.html">Contact</a>
+                        </div>
+                        <div class="col-md-6 col-sm-6 text-right fh5co-social">
+                            <a href="#" class="grow"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="grow"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="grow"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <header id="fh5co-header-section" class="sticky-banner">
+                <div class="container">
+                    <div class="nav-header">
+                        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+                        <h1 id="fh5co-logo"><a href="index.html">Charity</a></h1>
+                        <nav id="fh5co-menu-wrap" role="navigation">
+                            <ul class="sf-menu" id="fh5co-primary-menu">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="fh5co-sub-ddown">Get Involved</a>
+                                    <ul class="fh5co-sub-menu">
+                                        <li><a href="donate.html" class="active">Donate</a></li>
+                                        <li><a href="volunteer.html">Volunteer</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#" class="fh5co-sub-ddown">Projects</a>
+                                     <ul class="fh5co-sub-menu">
+                                        <li><a href="#">Water World</a></li>
+                                        <li><a href="#">Cloth Giving</a></li>
+                                        <li><a href="#">Medical Mission</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+           
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="donation-card">
+                            <h2>Donate Now</h2>
+                            <form id="donationForm" action="#" method="post" onsubmit="return validateForm()">
+                                <!-- Step 1: Donation Details -->
+                                <div class="step active">
+                                    <div class="form-group">
+                                        <label for="name">Full Name</label>
+                                        <input type="text" class="form-control" id="name" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email Address</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Donation Amount</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="amount" id="amount50" value="50">
+                                            <label class="form-check-label" for="amount50">$50</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="amount" id="amount100" value="100">
+                                            <label class="form-check-label" for="amount100">$100</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="amount" id="amount500" value="500">
+                                            <label class="form-check-label" for="amount500">$500</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="amount" id="amount1000" value="1000">
+                                            <label class="form-check-label" for="amount1000">$1,000</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="amount" id="amount5000" value="5000">
+                                            <label class="form-check-label" for="amount5000">$5,000</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="amount" id="amount10000" value="10000">
+                                            <label class="form-check-label" for="amount10000">$10,000</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="amount" id="amountOther" value="other">
+                                            <label class="form-check-label" for="amountOther">Other</label>
+                                        </div>
+                                        <input type="number" class="form-control" id="customAmount" name="customAmount" placeholder="Enter amount" style="display:none; margin-top: 15px;">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Donation Type</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="donationType" id="oneTime" value="one-time" checked>
+                                            <label class="form-check-label" for="oneTime">One-Time</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="donationType" id="monthly" value="monthly">
+                                            <label class="form-check-label" for="monthly">Monthly</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="donationType" id="honor" value="honor">
+                                            <label class="form-check-label" for="honor">In Honor of Someone</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="honorDetails" style="display:none;">
+                                        <label for="honorName">Honoree's Name</label>
+                                        <input type="text" class="form-control" id="honorName" name="honorName">
+                                        <label for="honorEmail">Honoree's Email</label>
+                                        <input type="email" class="form-control" id="honorEmail" name="honorEmail">
+                                    </div>
+                                    <button type="button" class="btn btn-next btn-block  btn-danger">Next</button>
+                                </div>
+
+                                <!-- Step 2: Payment Method -->
+                                <div class="step">
+                                    <div class="form-group">
+                                        <label for="paymentMethod">Payment Method</label><br>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="paypal" value="paypal" checked>
+                                            <label class="form-check-label" for="paypal">PayPal</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="bank" value="bank">
+                                            <label class="form-check-label" for="bank">Bank Account</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="visa" value="visa">
+                                            <label class="form-check-label" for="visa">Visa</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="crypto" value="crypto">
+                                            <label class="form-check-label" for="crypto">Crypto</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Step 3: Payment Details -->
+                                <div class="step">
+                                    <div class="form-group" id="bankDetails" style="display:none;">
+                                        <label for="bankAccount">Bank Account Number</label>
+                                        <input type="text" class="form-control" id="bankAccount" name="bankAccount">
+                                    </div>
+                                    <div class="form-group" id="cardDetails" style="display:none;">
+                                        <label for="cardNumber">Card Number</label>
+                                        <input type="text" class="form-control" id="cardNumber" name="cardNumber">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" class="form-control" id="cvv" name="cvv">
+                                        <label for="expiryDate">Expiry Date</label>
+                                        <input type="text" class="form-control" id="expiryDate" name="expiryDate" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group" id="cryptoDetails" style="display:none;">
+                                        <label for="cryptoWallet">Crypto Wallet Address</label>
+                                        <input type="text" class="form-control" id="cryptoWallet" name="cryptoWallet">
+                                    </div>
+                                    <button type="button" class="btn btn-next btn-block btn-danger">Next</button>
+                                </div>
+
+                                <!-- Step 4: Confirmation -->
+                                <div class="step">
+                                    <h3>Confirm Your Donation</h3>
+                                    <p>Please review your donation details and click "Confirm" to complete your donation.</p>
+                                    <button type="submit" class="btn btn-confirm btn-block btn-danger">Confirm</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="charity-info">
+                            <h3>Why Your Donation Matters</h3>
+                            <p>Your contribution helps us provide essential resources and services to those in need. Every dollar you donate goes directly to our projects, such as providing clean water, medical assistance, education, and shelter to the underprivileged communities.</p>
+                            <p>With your support, we can make a significant impact and improve lives. We believe in transparency, and you can see the difference your donation makes through our regular updates and reports.</p>
+                            <h4>Our Ongoing Projects</h4>
+                            <ul>
+                                <li>Water World: Bringing clean water to communities.</li>
+                                <li>Cloth Giving: Providing clothing to those in need.</li>
+                                <li>Medical Mission: Offering medical services and supplies.</li>
+                                <li>Educational Support: Funding education for children and adults.</li>
+                            </ul>
+                            <p>Join us in making a difference today. Your generosity is the key to a better future for many.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div id="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-md-offset-3 text-center">
+                                <p class="fh5co-social-icons">
+                                    <a href="#"><i class="icon-twitter2"></i></a>
+                                    <a href="#"><i class="icon-facebook2"></i></a>
+                                    <a href="#"><i class="icon-instagram"></i></a>
+                                    <a href="#"><i class="icon-youtube"></i></a>
+                                </p>
+                                <p>Copyright <a href="#">Charity</a>. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let amount = document.querySelector('input[name="amount"]:checked').value;
+            let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            let donationType = document.querySelector('input[name="donationType"]:checked').value;
+
+            if (name.trim() === "") {
+                alert("Name is required.");
+                return false;
+            }
+            if (!emailPattern.test(email)) {
+                alert("Invalid email address.");
+                return false;
+            }
+            if (amount === "other") {
+                amount = document.getElementById("customAmount").value;
+                if (amount <= 0) {
+                    alert("Donation amount must be greater than zero.");
+                    return false;
+                }
+            }
+            if (donationType === "honor") {
+                let honorName = document.getElementById("honorName").value;
+                let honorEmail = document.getElementById("honorEmail").value;
+                if (honorName.trim() === "") {
+                    alert("Honoree's name is required.");
+                    return false;
+                }
+                if (!emailPattern.test(honorEmail)) {
+                    alert("Invalid honoree's email address.");
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        document.querySelectorAll('input[name="amount"]').forEach((elem) => {
+            elem.addEventListener("change", function(event) {
+                let customAmount = document.getElementById("customAmount");
+                if (event.target.value === "other") {
+                    customAmount.style.display = "block";
+                } else {
+                    customAmount.style.display = "none";
+                }
+            });
+        });
+
+        document.querySelectorAll('input[name="donationType"]').forEach((elem) => {
+            elem.addEventListener("change", function(event) {
+                let honorDetails = document.getElementById("honorDetails");
+                if (event.target.value === "honor") {
+                    honorDetails.style.display = "block";
+                } else {
+                    honorDetails.style.display = "none";
+                }
+            });
+        });
+
+        document.querySelectorAll('.btn-next').forEach(button => {
+            button.addEventListener('click', function() {
+                let currentStep = this.closest('.step');
+                let nextStep = currentStep.nextElementSibling;
+                if (nextStep) {
+                    currentStep.classList.remove('active');
+                    nextStep.classList.add('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('.btn-previous').forEach(button => {
+            button.addEventListener('click', function() {
+                let currentStep = this.closest('.step');
+                let previousStep = currentStep.previousElementSibling;
+                if (previousStep) {
+                    currentStep.classList.remove('active');
+                    previousStep.classList.add('active');
+                }
+            });
+        });
+
+        document.querySelectorAll('input[name="paymentMethod"]').forEach((elem) => {
+            elem.addEventListener("change", function(event) {
+                let bankDetails = document.getElementById("bankDetails");
+                let cardDetails = document.getElementById("cardDetails");
+                let cryptoDetails = document.getElementById("cryptoDetails");
+
+                bankDetails.style.display = "none";
+                cardDetails.style.display = "none";
+                cryptoDetails.style.display = "none";
+
+                if (event.target.value === "bank") {
+                    bankDetails.style.display = "block";
+                } else if (event.target.value === "visa") {
+                    cardDetails.style.display = "block";
+                } else if (event.target.value === "crypto") {
+                    cryptoDetails.style.display = "block";
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
