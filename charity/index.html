@@ -462,6 +462,50 @@
 
 	<!-- jQuery -->
 
+	  <!-- Donation Form -->
+	  <form onsubmit="submitDonation(); return false;">
+		<input type="text" id="name" placeholder="Donor Name" required>
+		<input type="number" id="amount" placeholder="Amount" required>
+		<button type="submit">Submit Donation</button>
+	  </form>
+
+	  <h2>Donations List</h2>
+	  <!-- Display list of donations here -->
+	  <div id="donations-list"></div>
+	
+	  <script>
+		// Fetch donations and display them in the donations list
+		fetch('http://localhost:5000/api/donations')
+		  .then(response => response.json())
+		  .then(data => {
+			const container = document.getElementById('donations-list');
+			data.forEach(item => {
+			  const div = document.createElement('div');
+			  div.textContent = `Name: ${item.name}, Amount: ${item.amount}`;
+			  container.appendChild(div);
+			});
+		  });
+	
+		// Function to submit a new donation
+		function submitDonation() {
+		  const name = document.getElementById('name').value;
+		  const amount = document.getElementById('amount').value;
+	
+		  fetch('http://localhost:5000/api/donations', {
+			method: 'POST',
+			headers: {
+			  'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({ name, amount }),
+		  })
+		  .then(response => response.json())
+		  .then(data => {
+			console.log('Donation added:', data);
+			// Optionally refresh the donations list after submitting a new donation
+		  });
+		}
+	  </script>
+
 
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
