@@ -10,7 +10,7 @@ def get_db_connection():
         host="localhost",
         database="charity_db",
         user="postgres",
-        password="yourpassword"  # Replace with your actual password
+        password="12345678"  # Replace with your actual password
     )
     return conn
 

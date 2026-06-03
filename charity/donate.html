@@ -354,42 +354,6 @@
         });
     </script>
 
-<form onsubmit="submitDonation(); return false;">
-    <input type="text" id="name" placeholder="Full Name" required>
-    <input type="email" id="email" placeholder="Email Address" required>
-    <input type="number" id="amount" placeholder="Donation Amount" required>
-    <button type="submit">Submit Donation</button>
-</form>
-
-<script>
-    function submitDonation() {
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const amount = document.getElementById('amount').value;
-        const donationType = document.querySelector('input[name="donationType"]:checked').value;
-        const message = document.getElementById('message').value;
-
-        fetch('http://localhost:5000/api/donations', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name,
-                email,
-                amount,
-                donation_type: donationType,
-                message
-            }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert('Donation successful!');
-            console.log(data);
-        })
-        .catch(error => console.error('Error:', error));
-    }
-</script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
